@@ -6,9 +6,9 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 /**
- * @author: Tom Tsiliopoulos
- * @date: May 26, 2016
- * @version: 0.0.1 - added the SetActivePage method
+ * @author: Naga Rimmalapudi
+ * @date: June 13, 2016
+ * @version: 0.0.2 - updated SetActivePage method to include new links
  */
 
 namespace COMP2007_Lab3
@@ -33,6 +33,15 @@ namespace COMP2007_Lab3
             {
                 case "Home Page":
                     home.Attributes.Add("class", "active");
+                    break;
+                case "Students":
+                    Students.Attributes.Add("class", "active");
+                    break;
+                case "Courses":
+                    Courses.Attributes.Add("class", "active");
+                    break;
+                case "Departments":
+                    Departments.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");
